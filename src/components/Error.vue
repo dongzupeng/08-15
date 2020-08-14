@@ -1,0 +1,43 @@
+<template>
+    <div class="error">
+        <img src="../assets/404.jpg" alt="">
+        <div class="wrap">
+            <van-button type="info" @click="gohome">返回首页</van-button>
+            <van-button plain type="info" @click="goreturn">返回上一步</van-button>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name:'error',
+
+        methods:{
+            gohome(){
+                this.$router.push('/sheet');
+            },
+            goreturn(){
+                this.$router.go(-1);
+            }
+        }
+    }
+</script>
+
+<style scoped>
+.error{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.wrap{
+    display:flex;
+    justify-content: space-around;
+    margin-top: -80px;
+}
+.wrap button{
+    width: 120px;
+}
+</style>
