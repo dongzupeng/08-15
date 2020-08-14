@@ -2,7 +2,7 @@
 ### 本项目使用的技术栈是:
 vue-cil
 vue-router
-vue
+vuex
 axios
 移动端轻量级框架vant
 
